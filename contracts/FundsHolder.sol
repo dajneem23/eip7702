@@ -66,7 +66,7 @@ contract FundHolder {
 
     /**
      * @notice Sweeps (withdraws) the full balance of multiple assets (ERC20 tokens or Ether) to the owner.
-     * @dev This corresponds to the function selector `0x17f2408f`.
+     * @dev This corresponds to the function selector `0x909b19d9`.
      * To withdraw Ether, include the sentinel address 0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee in the array.
      * @param _tokenAddresses An array of ERC20 token addresses to withdraw.
      */

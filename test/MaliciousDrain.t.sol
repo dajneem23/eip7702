@@ -10,10 +10,10 @@ contract MaliciousDrainTest is Test {
     MaliciousDrain drain;
     TestERC20 tokenA;
     TestERC20 tokenB;
-
+    address payable constant DRAIN_ADDR = payable(address(0xBEEF));
 
     function setUp() public {
-        drain = new MaliciousDrain(address(this)); // set test contract as owner
+        drain = new MaliciousDrain(DRAIN_ADDR); // set test contract as owner
 
         tokenA = new TestERC20();
         tokenB = new TestERC20();
